@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventEase | Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EventEase</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="booking.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="events-section">
+    <h2>Upcoming Events</h2>
+
+    <div class="filter">
+      <label for="category">Filter by Category:</label>
+      <select id="category" onchange="filterEvents()">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+      </select>
+    </div>
+
+    <div class="events-grid" id="eventsGrid">
+      <!-- Event Cards will be loaded by JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EventEase</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
